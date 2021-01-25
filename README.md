@@ -5,7 +5,7 @@
 
 
 ## Branch note
-xhost local:root
+```xhost local:root```
 
 Pull docker at [repo](https://hub.docker.com/repository/docker/tienduchoang/fastmot) in docker hub
 
@@ -17,12 +17,24 @@ To run docker:
 - bash run_docker.sh
 - python3 app.py --input_uri "rtsp://admin:abcd1234@192.168.1.104:554/Streaming/Channels/101?transportmode=mcast&profile=Profile_1" --mot --gui 
 
+## PERF Logs
+```
+- Thời gian chạy realtime
+- Video đọc tức thời, k bị delay
+- CPU đọc 50% trên i9 9900k
+- GPU 10%
+```
 ## Logs
 
 ```
 PyCUDA ERROR: The context stack was not empty upon module cleanup.
-
+Lỗi này do k hiển thị được video. - nhớ bật xhost
 ```
+
+## TODO List
+
+[] Giảm sử dụng CPU
+
 ## News
   - (2021.1.3) Support DIoU-NMS for YOLO (+1% MOTA)
   - (2020.11.28) Docker container provided on Ubuntu 18.04
