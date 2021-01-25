@@ -3,6 +3,12 @@
 
 <img src="assets/dense_demo.gif" width="400"/> <img src="assets/aerial_demo.gif" width="400"/>
 
+
+## Branch note
+Pull docker at [repo](https://hub.docker.com/repository/docker/tienduchoang/fastmot) in docker hub
+To run docker:
+- bash run_docker.sh
+- python3 app.py --input_uri "rtsp://admin:abcd1234@192.168.1.104:554/Streaming/Channels/101?transportmode=mcast&profile=Profile_1" --mot --gui 
 ## News
   - (2021.1.3) Support DIoU-NMS for YOLO (+1% MOTA)
   - (2020.11.28) Docker container provided on Ubuntu 18.04
